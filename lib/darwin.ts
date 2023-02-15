@@ -46,6 +46,7 @@ export const DarwinBinding: DarwinBindingInterface = {
       lock: true,
       stopBits: 1,
       parity: 'none',
+      rts: false,
       rtscts: false,
       xon: false,
       xoff: false,

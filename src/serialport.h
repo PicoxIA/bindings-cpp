@@ -66,6 +66,7 @@ struct OpenBaton : public Napi::AsyncWorker {
   int baudRate = 0;
   int dataBits = 0;
   bool rtscts = false;
+  bool rts = false;
   bool xon = false;
   bool xoff = false;
   bool xany = false;

@@ -53,6 +53,7 @@ export const WindowsBinding: WindowsBindingInterface = {
       stopBits: 1,
       parity: 'none',
       rtscts: false,
+      rts: false,
       rtsMode: 'handshake',
       xon: false,
       xoff: false,
