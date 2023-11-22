@@ -11,6 +11,8 @@ export interface WindowsOpenOptions extends OpenOptions {
   parity?: 'none' | 'even' | 'odd' | 'mark' |'space',
   /** RTS mode defaults to handshake */
   rtsMode?: 'handshake' | 'enable' | 'toggle'
+  /** Allow for rts only mode */
+  rts?: boolean
 }
 
 export type WindowsBindingInterface = BindingInterface<WindowsPortBinding, WindowsOpenOptions>

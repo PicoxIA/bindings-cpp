@@ -16,7 +16,9 @@ export interface LinuxOpenOptions extends OpenOptions {
   vmin?: number
   /** see [`man termios`](http://linux.die.net/man/3/termios) defaults to 0 */
   vtime?: number
-  // * @param {Boolean} [options.lowLatency=false] flag for lowLatency mode on Linux
+  // * @param {Boolean} [options.lowLatency=false] flag for lowLatency mode on Linux,
+  /** Allow for rts only mode */
+  rts?: boolean,
 }
 
 export interface LinuxPortStatus extends PortStatus {

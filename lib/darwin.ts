@@ -15,6 +15,8 @@ export interface DarwinOpenOptions extends OpenOptions {
   vmin?: number
   /** see [`man termios`](http://linux.die.net/man/3/termios) defaults to 0 */
   vtime?: number
+  /** Allow for rts only mode */
+  rts?: boolean
 }
 
 export type DarwinBindingInterface = BindingInterface<DarwinPortBinding, DarwinOpenOptions>
